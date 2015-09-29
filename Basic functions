@@ -1,0 +1,11 @@
+/*Native to C
+Create a Boolean type*/
+
+#define BOOL char
+#define FALSE 0
+#define TRUE 1
+
+#include <stdio.h>  /*---------------------------------------------------------------------*/
+
+printf("%s\n", "Done!")               /* https://es.wikipedia.org/wiki/Printf */
+strncmp(name, "John Boe", 100)        /* http://www.tutorialspoint.com/ansi_c/c_strncmp.htm */
