@@ -5,6 +5,14 @@ Create a Boolean type*/
 #define FALSE 0
 #define TRUE 1
 
+/* Operators 
+==
+!=
++=
+*=
+*/
+
+
 #include <stdio.h>  /*---------------------------------------------------------------------*/
 
 printf("%s\n", "Done!")               /* https://es.wikipedia.org/wiki/Printf */
