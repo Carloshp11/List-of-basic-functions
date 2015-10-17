@@ -30,6 +30,16 @@ struct point p;
 p.x = 10;
 p.y = 5;
 
+/*Or you can typedef the structure and omit the struct command later*/
+
+typedef struct {
+    int x;
+    int y;
+} point;
+
+point p;
+p.x = 10;
+p.y = 5;
 
 
  switch( Grade )
