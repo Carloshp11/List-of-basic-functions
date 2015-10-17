@@ -1,0 +1,8 @@
+char ModifyString(char NewText, int OldTextAllocator){
+    int i;   
+    
+    for(i=0,NewText[i] != 0,i++){
+        printf("Caracter a sustituir: %s\n",NewText[i]);
+        *(OldTextAllocator + i) = NewText[i];   
+    }
+}
