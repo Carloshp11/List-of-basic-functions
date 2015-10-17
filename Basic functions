@@ -18,7 +18,19 @@ a += 1
 a -= 1
 Ternary if -)    (condition)? TrueValue : FalseValue
 
-*/
+
+Structures*/
+
+struct point {
+    int x;
+    int y;
+}
+
+struct point p;
+p.x = 10;
+p.y = 5;
+
+
 
  switch( Grade )
  {
