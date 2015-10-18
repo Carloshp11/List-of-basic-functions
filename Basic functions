@@ -62,5 +62,10 @@ p.y = 5;
 
 #include <stdio.h>  /*---------------------------------------------------------------------*/
 
-printf("%s\n", "Done!")               /* https://es.wikipedia.org/wiki/Printf */
-strncmp(name, "John Boe", 100)        /* http://www.tutorialspoint.com/ansi_c/c_strncmp.htm */
+printf("%s\n", "Done!")               /* es.wikipedia.org/wiki/Printf */
+strncmp(name, "John Boe", 100)        /* www.tutorialspoint.com/ansi_c/c_strncmp.htm */
+
+#include <string.h>  /*---------------------------------------------------------------------*/
+
+char *strcpy(char *dest, const char *src);  /*www.tutorialspoint.com/c_standard_library/c_function_strcpy.htm */
+void *memset(void *str, int c, size_t n);   /* http://www.tutorialspoint.com/c_standard_library/c_function_memset.htm*/
