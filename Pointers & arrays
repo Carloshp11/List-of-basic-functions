@@ -1,4 +1,12 @@
 int * pointer_to_a = &a
-* means you are declaring a pointer. It also means you are to search for the value where the pointer leads instead of
-using the memory address -) *pointer_to_a = 1 vs pointer_to_a = 1
+* means you are declaring a pointer. 
+It also means you are to search for the value where the pointer leads instead of using the memory address 
+-) *pointer_to_a = 1 vs pointer_to_a = 1
 & means you are refering to the memory adress where a remains
+unclear the difference between using & and nothing.
+
+Structures definition as pointers:
+If you define a previously typedef struct
+person *newperson;
+That wouldn't work because the pointer doesn't know the size it must have. You need to provide that info by allocating memory
+person * myperson = malloc(sizeof(person));
