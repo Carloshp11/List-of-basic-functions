@@ -10,3 +10,6 @@ If you define a previously typedef struct
 person *newperson;
 That wouldn't work because the pointer doesn't know the size it must have. You need to provide that info by allocating memory
 person * myperson = malloc(sizeof(person));
+
+After we are done using the dynamically allocated struct, we can release it using free:
+free(myperson);
