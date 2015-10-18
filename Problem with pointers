@@ -36,7 +36,7 @@ int remove_by_value(node_t ** head, int val) {
         return -1;
     }
     /* TODO: fill in your code here */
-    node_t*current = (*head);
+    node_t*current = head;
     if ((*head)->val==val){
         printf("Head is the node to erase\n");
         node_t*referencing = (*head)->next;
