@@ -1,0 +1,47 @@
+You can define a matching with the re.compile() method. Example:
+
+valid = re.compile(r"^[a2-9tjqk]{5}$")
+
+Afterwards you can use any method with it. Most important exaples of methods are hte following:
+
+match() 	    Determine if the RE matches at the beginning of the string.
+search() 	    Scan through a string, looking for any location where this RE matches.
+findall()   	Find all substrings where the RE matches, and returns them as a list.
+finditer() 	  Find all substrings where the RE matches, and returns them as an iterator.
+
+Example:
+
+def displaymatch(match):
+    if match is None:
+        return None
+    return '<Match: %r, groups=%r>' % (match.group(), match.groups())
+
+valid = re.compile(r"^[a2-9tjqk]{5}$")
+
+>>> displaymatch(valid.match("akt5q"))  # Valid.
+"<Match: 'akt5q', groups=()>"
+>>> displaymatch(valid.match("akt5e"))  # Invalid.
+>>> displaymatch(valid.match("akt"))    # Invalid.
+>>> displaymatch(valid.match("727ak"))  # Valid.
+"<Match: '727ak', groups=()>"
+
+Within the match method, you can define groups and even name them:
+
+>>> m = re.match(r"(\w+) (\w+)", "Isaac Newton, physicist")
+>>> m.group(0)       # The entire match
+'Isaac Newton'
+>>> m.group(1)       # The first parenthesized subgroup.
+'Isaac'
+>>> m.group(2)       # The second parenthesized subgroup.
+'Newton'
+>>> m.group(1, 2)    # Multiple arguments give us a tuple.
+('Isaac', 'Newton')
+
+now with names:
+
+>>> m = re.match(r"(?P<first_name>\w+) (?P<last_name>\w+)", "Malcolm Reynolds")
+>>> m.group('first_name')
+'Malcolm'
+>>> m.group('last_name')
+'Reynolds'
+
