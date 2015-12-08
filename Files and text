@@ -1,0 +1,6 @@
+# After the statement is executed, the file f is always closed, even if a problem was encountered while processing the lines. 
+# Other objects which provide predefined clean-up actions will indicate this in their documentation.
+
+with open("myfile.txt") as f:
+    for line in f:
+        print line,
