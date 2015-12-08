@@ -1,2 +1,17 @@
+Example application:
+
+import urllib.request
+
+fhand = urllib.request.urlopen('http://www.py4inf.com/code/rome.txt')
+
+for line in fhand:
+    print(line.strip())
+
+
+Now let's retrieve the headers also:
+
+
+
+
 If you are using proxy then the call to connect should be to your proxy hostname and port, not to the web server. 
 In other words -- first connect to the proxy server then issue the request to get the document.
