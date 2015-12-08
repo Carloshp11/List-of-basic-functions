@@ -1,0 +1,2 @@
+If you are using proxy then the call to connect should be to your proxy hostname and port, not to the web server. 
+In other words -- first connect to the proxy server then issue the request to get the document.
